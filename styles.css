@@ -1,0 +1,139 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+.left-pane {
+
+    background-color: #099dfd;
+    width: 25vw;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.right-pane {
+    flex: 1;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+}
+
+.image-container{
+    width: 240px;
+    margin: 60px auto 0 auto;
+    align-items: center;
+}
+
+.form-container{
+    margin-top: 120px;
+    font-size: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: left;
+    align-items: center;
+}
+.next-row{
+    font-size: 40px;
+    text-align: left;
+}
+
+input{
+    margin-top: 20px;
+    border: 2px solid #099dfd;
+    width: 90%;
+    font-size: 17px;
+    border-radius: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 5px;
+    padding-inline: 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #099dfd;
+}
+
+button:hover{
+    background-color: #5abdff;
+}
+
+
+
+
+#tagline{
+    
+    font-size: 32px;
+    color: white;
+    margin: 60px auto 0 auto;
+}
+
+#result{
+    font-size: 32px;
+    color: white;
+}
+
+.answer{
+    color: blue;
+    display: none;
+    font-size: 12px;
+}
+
+.solve { grid-area: equal; }
+.add { grid-area: plus; }
+.sub { grid-area: minus; }
+.mult { grid-area: mul; }
+.divide { grid-area: div; }
+.one { grid-area: num1; }
+.two { grid-area: num2; }
+.three { grid-area: num3; }
+.four { grid-area: num4; }
+.five { grid-area: num5; }
+.six { grid-area: num6; }
+.seven { grid-area: num7; }
+.eight { grid-area: num8; }
+.nine { grid-area: num9; }
+.zero { grid-area: num0; }
+.dot { grid-area: pt; }
+.clear { grid-area: clear; }
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'plus minus mul div equal'
+        'num1 num2 num3 num4 equal'
+        'num5 num6 num7 num8 equal'
+        'num9 num0 pt clear equal';
+    background-color: #b4d0e7;
+    grid-gap: 10px;
+    padding: 10px;
+    
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+    align-items: center;
+  }
